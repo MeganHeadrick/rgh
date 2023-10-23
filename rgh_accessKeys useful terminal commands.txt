@@ -1,0 +1,21 @@
+username
+amplify-rgh
+
+Access key ID
+AKIAZWVEWAVNIGAKAOBV
+
+Secret access key
+nWUfR0H+KV0x53IAPFBtHnDMv4Z7Z3b/Yjt7+SJx
+
+
+ls -l /Users/robo/.config
+sudo chown -R 503:20 /Users/robo/.config
+ls -l /Users/robo/.config
+
+ls -l /Users/robo/.aws
+sudo chown -R 503:20 /Users/robo/.aws
+ls -l /Users/robo/.aws
+
+ls -l /Users/robo/Public/rgh
+sudo chown -R 503:20 /Users/robo/Public/rgh
+ls -l /Users/robo/Public/rgh
