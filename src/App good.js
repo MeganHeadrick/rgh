@@ -71,7 +71,7 @@ const App = ({ signOut }) => {
 
   return (
     <View className="App">
-      <Heading level={4}>Megan's Practice Place</Heading>
+      <Heading level={1}>My Notes App</Heading>
       <View as="form" margin="3rem 0" onSubmit={createNote}>
         <Flex direction="row" justifyContent="center">
           <TextField
@@ -101,16 +101,7 @@ const App = ({ signOut }) => {
           </Button>
         </Flex>
       </View>
-      <Heading level={5}>Old Songs</Heading>
-    
-      <p><Text as="strong" color={'#666699'}>More about this:</Text></p>
-      <ul>
-      <li>Jolene - 1973</li>
-      <li>Islands in the Stream - 1983</li>
-      <li>Working 9 To 5 - 1980</li>
-      </ul>
-      <p>He is a great class president, but not sure about his site: <a href="https://master.dmm48zw3bnrws.amplifyapp.com/">Dylan's</a>.</p>
-      
+      <Heading level={2}>Current Notes</Heading>
       <View margin="3rem 0">
       {notes.map((note) => (
         <Flex
@@ -127,7 +118,7 @@ const App = ({ signOut }) => {
             <Image
               src={note.image}
               alt={`visual aid for ${notes.name}`}
-              style={{ width: 240 }}
+              style={{ width: 400 }}
             />
           )}
           <Button variation="link" onClick={() => deleteNote(note)}>
@@ -136,7 +127,6 @@ const App = ({ signOut }) => {
         </Flex>
       ))}
       </View>
-
       <Button onClick={signOut}>Sign Out</Button>
     </View>
   );
